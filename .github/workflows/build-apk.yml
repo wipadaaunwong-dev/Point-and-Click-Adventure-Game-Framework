@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Point-and-Click-Adventure-Game-Framework
+        working-directory: point_and_click_game
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -17,5 +17,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: app-apk
-          path: Point-and-Click-Adventure-Game-Framework/build/app/outputs/flutter-apk/app-release.apk
+          path: point_and_click_game/build/app/outputs/flutter-apk/app-release.apk
 
